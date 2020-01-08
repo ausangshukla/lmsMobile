@@ -16,6 +16,18 @@ const routes: Routes = [
     },
     canActivate: [UserRouteAccessService]
   }
+  , {
+    path: 'course',
+    loadChildren: './course/course.module#CoursePageModule'
+  }
+  , {
+    path: 'profile',
+    loadChildren: './profile/profile.module#ProfilePageModule'
+  }
+  , {
+    path: 'attendence',
+    loadChildren: './attendence/attendence.module#AttendencePageModule'
+  }
   /* jhipster-needle-add-entity-route - JHipster will add entity modules routes here */
 ];
 
